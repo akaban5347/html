@@ -72,7 +72,9 @@ nav input {
   height: 50px;
 }
 
-.special .name .developer {
+.special,
+.name,
+.developer {
   margin: 0;
 }
 
@@ -91,6 +93,7 @@ nav input {
   width: 896px;
   height: 594px;
   margin: 0 auto 69px;
+  display: block;
 }
 
 .text-upper {
@@ -130,6 +133,6 @@ nav input {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer {
+footer {
   margin-bottom: 77px;
 }
