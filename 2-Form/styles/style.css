@@ -3,11 +3,16 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 html {
-  background:
-    linear-gradient(0deg, #f39494, #f39494),
-    linear-gradient(243.43deg, #ffa5a5 32.96%, rgba(255, 255, 255, 0) 82.03%),
-    linear-gradient(243.18deg, #fdc5c5 25.45%, rgba(242, 152, 222, 0) 100%);
+  background: linear-gradient(
+    243.18deg,
+    #fdc5c5 25.45%,
+    rgba(242, 152, 222, 0) 100%
+  );
 }
 
 main {
@@ -23,11 +28,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   gap: 47px;
   border-radius: 10px;
   width: 582px;
-  padding: 72px auto 91px;
+  padding: 72px 60px 91px;
 }
 
 .registred {
@@ -38,6 +43,8 @@ main {
 .account {
   display: flex;
   flex-direction: row;
+  align-items: baseline;
+  gap: 1px;
 }
 
 form {
@@ -59,6 +66,7 @@ form {
   color: #666666;
   font-size: 18px;
   font-weight: 400;
+  margin: 0;
 }
 
 .link {
@@ -70,6 +78,7 @@ form {
 #username {
   background-color: #ffffff;
   font-size: 16px;
+  border: 1px solid #f5f5f5;
 }
 
 #name,
@@ -85,11 +94,11 @@ form {
   color: #ffffff;
   font-size: 18px;
   border-radius: 5px;
-  padding: 9px auto 11px;
+  padding: 9px 15px 11px;
   border: 3px solid #ffffff;
 }
 
-#checkbox {
+.checkbox {
   color: #666666;
   font-size: 14px;
   font-weight: 400;
@@ -103,6 +112,6 @@ form {
 
 input {
   border-radius: 5px;
-  padding: 9px auto 11px;
+  padding: 9px 15px 11px;
   border: 1px solid #ffffff;
 }
