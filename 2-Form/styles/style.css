@@ -10,6 +10,13 @@ html {
     linear-gradient(243.18deg, #fdc5c5 25.45%, rgba(242, 152, 222, 0) 100%);
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .form {
   background-color: #fffefe;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -19,10 +26,18 @@ html {
   align-content: center;
   gap: 47px;
   border-radius: 10px;
+  width: 582px;
+  padding: 72px auto 91px;
 }
 
-.registered {
+.registred {
   display: flex;
+  flex-direction: column;
+}
+
+.account {
+  display: flex;
+  flex-direction: row;
 }
 
 form {
@@ -69,6 +84,9 @@ form {
   background-color: #089fe0;
   color: #ffffff;
   font-size: 18px;
+  border-radius: 5px;
+  padding: 9px auto 11px;
+  border: 3px solid #ffffff;
 }
 
 #checkbox {
@@ -81,4 +99,10 @@ form {
   font-weight: 400;
   color: #089fe0;
   font-size: 14px;
+}
+
+input {
+  border-radius: 5px;
+  padding: 9px auto 11px;
+  border: 1px solid #ffffff;
 }
