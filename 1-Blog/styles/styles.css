@@ -5,7 +5,7 @@
 
 body {
   background: linear-gradient(180deg, #374151 0%, #111827 100%);
-  margin: 0;
+  margin: 0 auto;
   max-width: 1440px;
 }
 
@@ -13,11 +13,16 @@ nav {
   display: flex;
   padding: 80px 180px;
   max-width: 1440px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 ul {
   list-style-type: none;
   display: flex;
+  margin: 0px;
+  padding: 0px;
+  gap: 20px;
 }
 
 nav input {
@@ -41,7 +46,12 @@ nav input {
   text-decoration: none;
   background-color: #4b5563;
   box-shadow: 0px 15px 30px 0px #00000026;
-  margin-right: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 3px;
 }
 
 .link {
@@ -51,24 +61,8 @@ nav input {
   text-decoration: none;
 }
 
-.myBlogLink {
-  margin: 0px 77px auto auto;
-}
-
-.htmlLink {
-  margin: 0px 52px auto auto;
-}
-
-.frontLink {
-  margin: 0px 39px auto auto;
-}
-
-.backLink {
-  margin: 0px 346px auto auto;
-}
-
 #search {
-  background-color: (31, 41, 55, 0.6);
+  background-color: rgba(31, 41, 55, 0.6);
   border-radius: 100px;
   font-size: 16px;
   line-height: 100%;
@@ -76,6 +70,7 @@ nav input {
   width: 224px;
   height: 40px;
   padding: 9px auto 12px 39px;
+  margin: 0;
 }
 
 .blog-name {
