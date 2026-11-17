@@ -57,6 +57,7 @@ form {
   font-weight: 700;
   font-size: 36px;
   color: #333333;
+  margin: 0;
 }
 
 .text {
@@ -114,5 +115,11 @@ input {
 }
 
 .namesurname {
+  display: flex;
   gap: 1px;
+}
+
+.namesurname input {
+  flex: 1;
+  min-width: 0;
 }

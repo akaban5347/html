@@ -1,20 +1,23 @@
 * {
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
   background: linear-gradient(180deg, #374151 0%, #111827 100%);
   margin: 0;
+  max-width: 1440px;
 }
 
 nav {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  display: flex;
+  padding: 80px 180px;
+  max-width: 1440px;
 }
 
 ul {
   list-style-type: none;
-  padding: 0;
+  display: flex;
 }
 
 nav input {
@@ -24,6 +27,8 @@ nav input {
   letter-spacing: 0%;
   background-color: rgba(31, 41, 55, 0.6);
   color: #ffffff;
+  border-radius: 100px;
+  margin-right: 180px;
 }
 
 .blog-link {
@@ -33,6 +38,10 @@ nav input {
   line-height: 100%;
   letter-spacing: 0%;
   color: #ffffff;
+  text-decoration: none;
+  background-color: #4b5563;
+  box-shadow: 0px 15px 30px 0px #00000026;
+  margin-right: 23px;
 }
 
 .link {
@@ -42,8 +51,39 @@ nav input {
   text-decoration: none;
 }
 
+.myBlogLink {
+  margin: 0px 77px auto auto;
+}
+
+.htmlLink {
+  margin: 0px 52px auto auto;
+}
+
+.frontLink {
+  margin: 0px 39px auto auto;
+}
+
+.backLink {
+  margin: 0px 346px auto auto;
+}
+
+#search {
+  background-color: (31, 41, 55, 0.6);
+  border-radius: 100px;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  width: 224px;
+  height: 40px;
+  padding: 9px auto 12px 39px;
+}
+
 .blog-name {
-  margin: 0px auto 14px;
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 14px;
 }
 
 .special,
@@ -65,10 +105,23 @@ nav input {
   line-height: 38px;
   color: #ffffff;
   margin: 0 auto 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .address {
   margin: 0px auto 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.nameProf {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
 }
 
 .address img {
@@ -99,7 +152,9 @@ nav input {
   width: 896px;
   height: 594px;
   margin: 0 auto 69px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-upper {
@@ -107,8 +162,7 @@ nav input {
   font-size: 20px;
   line-height: 32px;
   color: #ffffff;
-  margin: 0 auto 30px;
-  width: 708px;
+  margin: 0;
 }
 
 .text {
@@ -116,16 +170,15 @@ nav input {
   font-size: 16px;
   line-height: 30px;
   color: #ffffff;
+  margin: 0;
 }
 
-.text-1 {
-  margin: 0px auto 30px;
-  width: 708px;
-}
-
-.text-2 {
-  margin: 0 auto 100px;
-  width: 708px;
+.main-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 708px;
+  margin: 0px auto 100px;
+  gap: 30px;
 }
 
 .span {
@@ -137,6 +190,9 @@ nav input {
   font-size: 16px;
   line-height: 28px;
   color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {

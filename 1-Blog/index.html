@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мой блог</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <nav>
         <ul>
           <li><a class="blog-link" href="#">B</a></li>
-          <li><a class="link" href="#">Мой блог</a></li>
-          <li><a class="link" href="#">HTML и CSS</a></li>
-          <li><a class="link" href="#">Frontend</a></li>
-          <li><a class="link" href="#">Backend</a></li>
+          <li><a class="link myBlogLink" href="#">Мой блог</a></li>
+          <li><a class="link htmlLink" href="#">HTML и CSS</a></li>
+          <li><a class="link frontLink" href="#">Frontend</a></li>
+          <li><a class="link backLink" href="#">Backend</a></li>
         </ul>
         <label for="search"></label>
         <input type="text" value="Поиск" id="search" />
@@ -32,12 +38,14 @@
           </h1>
           <address class="address">
             <img src="./images/image1.png" alt="Наталья Васильева" />
-            <p class="name">Наталья Васильева</p>
-            <p class="developer">Разработчик</p>
+            <div class="nameProf">
+              <p class="name">Наталья Васильева</p>
+              <p class="developer">Разработчик</p>
+            </div>
           </address>
         </header>
         <img src="./images/image2.jpg" alt="Ноутбук" class="main-img" />
-        <section>
+        <section class="main-section">
           <p class="text-upper">
             Теория цвета — это особенности эмоционального восприятия человеком
             тех или иных цветовых решений. Цвета и различные их комбинации
