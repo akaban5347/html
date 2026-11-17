@@ -33,7 +33,6 @@ nav input {
   background-color: rgba(31, 41, 55, 0.6);
   color: #ffffff;
   border-radius: 100px;
-  margin-right: 180px;
 }
 
 .blog-link {
@@ -69,8 +68,9 @@ nav input {
   letter-spacing: 0%;
   width: 224px;
   height: 40px;
-  padding: 9px auto 12px 39px;
+  padding: 9px 12px 12px 39px;
   margin: 0;
+  border: none;
 }
 
 .blog-name {
