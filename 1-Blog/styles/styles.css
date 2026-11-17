@@ -1,21 +1,28 @@
 * {
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
   background: linear-gradient(180deg, #374151 0%, #111827 100%);
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 nav {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  display: flex;
+  padding: 80px 180px;
+  max-width: 1440px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 ul {
   list-style-type: none;
-  padding: 0;
-  margin-top: 80px;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  gap: 20px;
 }
 
 nav input {
@@ -25,6 +32,7 @@ nav input {
   letter-spacing: 0%;
   background-color: rgba(31, 41, 55, 0.6);
   color: #ffffff;
+  border-radius: 100px;
 }
 
 .blog-link {
@@ -34,6 +42,15 @@ nav input {
   line-height: 100%;
   letter-spacing: 0%;
   color: #ffffff;
+  text-decoration: none;
+  background-color: #4b5563;
+  box-shadow: 0px 15px 30px 0px #00000026;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 3px;
 }
 
 .link {
@@ -43,8 +60,25 @@ nav input {
   text-decoration: none;
 }
 
+#search {
+  background-color: rgba(31, 41, 55, 0.6);
+  border-radius: 100px;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  width: 224px;
+  height: 40px;
+  padding: 9px 12px 12px 39px;
+  margin: 0;
+  border: none;
+}
+
 .blog-name {
-  margin: 0px auto 14px;
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 14px;
 }
 
 .special,
@@ -55,22 +89,47 @@ nav input {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.special,
+.datetime {
+  line-height: 100%;
+}
+
 .title {
   font-weight: 400;
   font-size: 24px;
   line-height: 38px;
   color: #ffffff;
   margin: 0 auto 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .address {
   margin: 0px auto 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.nameProf {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
 }
 
 .address img {
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  display: block;
+}
+
+.special,
+.name,
+.developer {
+  margin: 0;
 }
 
 .name {
@@ -88,6 +147,9 @@ nav input {
   width: 896px;
   height: 594px;
   margin: 0 auto 69px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-upper {
@@ -95,8 +157,7 @@ nav input {
   font-size: 20px;
   line-height: 32px;
   color: #ffffff;
-  margin: 0 auto 30px;
-  width: 708px;
+  margin: 0;
 }
 
 .text {
@@ -104,16 +165,15 @@ nav input {
   font-size: 16px;
   line-height: 30px;
   color: #ffffff;
+  margin: 0;
 }
 
-.text-1 {
-  margin: 0px auto 30px;
-  width: 708px;
-}
-
-.text-2 {
-  margin: 0 auto 100px;
-  width: 708px;
+.main-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 708px;
+  margin: 0px auto 100px;
+  gap: 30px;
 }
 
 .span {
@@ -125,5 +185,11 @@ nav input {
   font-size: 16px;
   line-height: 28px;
   color: rgba(255, 255, 255, 0.6);
-  margin: 0px auto 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  margin-bottom: 77px;
 }
